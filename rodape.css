@@ -1,0 +1,64 @@
+.rodape-pagina {
+    color: #F2FFFC;
+    padding: 0.1em;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px black;
+    background-color: black;
+    opacity: 0.5;
+    background-size: 25% 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes-sociais {
+    margin-right: 50px;
+    justify-content:center;
+}
+.icones-redes-sociais li {
+    display: inline-block;
+    text-align: center;
+}
+
+.icones-redes-sociais a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+    background-repeat: no-repeat;
+}
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: white;
+    top: 100%;
+    width: 300%;
+    right: 0;
+    text-indent: 0;
+    font-size: .75em;
+    transform: translateY(-4.5em);
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    transform: translateY(-2.0em) rotate(45deg);
+} 
+
+.social-buttons cf {
+    text-align: center;
+}
